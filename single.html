@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+      /* Parallax Effect */
+        .parallax {
+            background-image: url('c.jpg');
+            background-attachment: fixed; /* Parallax effect */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh; /* Full viewport height */
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* Content sections */
+        .section {
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .section p {
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        /* Smooth Scroll */
+        html, body {
+            scroll-behavior: smooth;
+        }
+
+        /* Optional: Style for the navigation */
+        .navbar {
+            margin-bottom: 0;
+        }
+
+        .navbar-nav li a {
+            color: #fff !important;
+        }
+
+        /* Icon Section */
+        .icon-box {
+            display: inline-block;
+            margin: 20px;
+            text-align: center;
+            padding: 30px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            width: 200px;
+        }
+
+        .icon-box i {
+            font-size: 3em;
+            color: #5bc0de;
+        }
+
+        .icon-box h3 {
+            font-size: 1.5em;
+            margin-top: 15px;
+        }
+  </style>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Parallax Website</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="#section1">Home</a></li>
+      <li><a href="#section2">About</a></li>
+      <li><a href="#section4">Portfolio</a></li>
+      <li><a href="#section6">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+--<!--.Parallax.Section.-->
+<<div id="section1" class="parallax">
+    <div class="container text-center">
+        <h1>My Website</h1>
+        <p>Showcase some of the work you've done or projects completed.</p>
+
+  
+  </div>
+  </div>
+</div>
+</div>
+<!--Section 2(About)-->
+<!--Section 5(Icon-based UI for feature/Services)-->
+<div id="section2" class="section">
+        <div class="container">
+            <h2>Our Features</h2>
+            <div class="icon-box">
+              <span class="glyphicon.glyphicon-refresh" style="font-size: 32px"></span>
+                <i class="fas fa-cogs"></i>
+                <h3>Custom Solutions</h3>
+                <p>We provide custom solutions tailored to your needs.</p>
+            </div>
+            <div class="icon-box">
+               <span class="glyphicon.glyphicon-refresh" style="font-size: 32px"></span>
+                <i class="fas fa-users"></i>
+                <h3>Dedicated Team</h3>
+                <p>Our team is committed to bringing your vision to life.</p>
+            </div>
+            <div class="icon-box">
+                 <span class="glyphicon glyphicon-cloud"></span> Cloud 
+                <h3>Cloud-Based</h3>
+                <p>We leverage cloud technology to enhance your business operations.</p>
+            </div>
+        </div>
+    </div>
+    </div>
+  </div>
+</div>
+--<!--.Parallax.Section.-->
+<div id="section4" class="parallax">
+    <div class="container text-center">
+        <h1>Our Portfolio</h1>
+        <p>Showcase some of the work you've done or projects completed.</p>
+        <div class="row">
+            <!-- Portfolio Image 1 -->
+            <div class="col-md-4">
+                <div class="portfolio-item">
+                    <img src="m.jpg" alt="Project 1" class="img-responsive">
+                    <div class="overlay">
+                        <p>Project 1 Description</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Portfolio Image 2 -->
+            <div class="col-md-4">
+                <div class="portfolio-item">
+                    <img src="f.jpg" alt="Project 2" class="img-responsive">
+                    <div class="overlay">
+                        <p>Project 2 Description</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Portfolio Image 3 -->
+            <div class="col-md-4">
+                <div class="portfolio-item">
+                    <img src="e.jpg" alt="Project 3" class="img-responsive">
+                    <div class="overlay">
+                        <p>Project 3 Description</p>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+</div>
+--<!--.Parallax.Section.-->
+<div id="section6" class="parallax">
+    <div class="container text-center">
+        <h1>Contact us</h1>
+          <div class="container">
+  <form>
+    <div class="form-group">
+      <label for="usr">Full Name:</label>
+      <input type="text" class="form-control" id="usr">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Email:</label>
+      <input type="Email" class="form-control" id="pwd">
+    </div>
+  </form>
+</div>
+<div class="form-group">
+      <label for="pwd">Address:</label>
+      <input type="Addresss" class="form-control" id="pwd">
+    </div>
+  </form>
+</div>
+<button onclick="Submit()">Submit</button>
+
+</body>
+</html>
